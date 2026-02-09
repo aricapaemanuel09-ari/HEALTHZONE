@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Registro</title>
+<style>
+  body { 
+    font-family: Arial, sans-serif; 
+    background-color: #f0f2f5; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+  }
+  .register-container { 
+    background: white; 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+    width: 300px; 
+    text-align: center; 
+  }
+  .register-container input { 
+    width: 100%; 
+    padding: 10px; 
+    margin: 8px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+  }
+  .register-container button { 
+    width: 100%; 
+    padding: 10px; 
+    background-color: #4CAF50; 
+    border: none; 
+    color: white; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 10px;
+  }
+  .login-link {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #0066cc;
+    text-decoration: none;
+  }
+  .login-link:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<div class="register-container" id="registerBox">
+  <h2 id="titulo">Registrarse</h2>
+  <form id="registerForm">
+    <input type="text" id="usuario" placeholder="Usuario" required>
+    <input type="number" id="numero" placeholder="Número de celular" required>
+    <input type="email" id="correo" placeholder="Correo electrónico" required>
+    <input type="password" id="contraseña" placeholder="Contraseña" required>
+    <button type="submit">Registrar</button>
+  </form>
+
+  <a href="Iniciar_Sesion.html" class="login-link" id="loginLink">
+    Ya tengo cuenta, Iniciar Sesión
+  </a>
+</div>
+
+<script>
+  document.getElementById("registerForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    
+    let usuario = document.getElementById("usuario").value;
+    let contraseña = document.getElementById("contraseña").value;
+    
+    let usuarioGuardado = localStorage.getItem("usuario");
+    let contraseñaGuardada = localStorage.getItem("contraseña");
+
+    if (usuario === usuarioGuardado) {
+      alert("El usuario ya está registrado. Por favor, inicie sesión.");
+      return; 
+    }
+
+    localStorage.setItem("usuario", usuario);
+    localStorage.setItem("contraseña", contraseña);
+
+    alert("Registro exitoso");
+    window.location.href = "Iniciar_Sesion.html"; 
+  });
+</script>
+
+</body>
+</html>

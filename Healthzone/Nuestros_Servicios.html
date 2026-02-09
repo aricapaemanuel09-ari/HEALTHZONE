@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros Servicios - Healthzone</title>
+  <link rel="stylesheet" href="Healthzone.css">
+  <style>
+    .servicios-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 a {
+      color: darkgreen;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .card p {
+      color: #444;
+      font-size: 15px;
+    }
+
+    .card img {
+      margin-top: 15px;
+      width: 120px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="HEALTHZONE_LOGO.png" alt="Logo Healthzone">
+      <nav>
+        <a href="Inicio.html">Inicio</a>
+        <a href="Nuestros_Servicios.html">Nuestros Servicios</a>
+        <a href="Contacto.html">Contacto</a>
+        <a href="Citas.html">Citas</a>
+      </nav>
+    </div>
+  </header>
+
+  <h1 style="text-align:center; margin-top:40px;">Nuestros Servicios</h1>
+
+  <!-- Viñetas -->
+  <div class="servicios-container">
+    <div class="card">
+      <h3><a href="Salud_emocional.html">Salud Emocional</a></h3>
+      <p>Bienestar mental y equilibrio en tu día a día.</p>
+      <img src="salud_emocional-removebg-preview.png" alt="Salud Emocional">
+    </div>
+
+    <div class="card">
+      <h3><a href="Salud_fisica.html">Salud Física</a></h3>
+      <p>Fortalece tu cuerpo y previene enfermedades.</p>
+      <img src="salud-fisica.jpg" alt="Salud Física">
+    </div>
+
+    <div class="card">
+      <h3><a href="Avance.html">Tu Avance</a></h3>
+      <p>Seguimiento de tus metas y evolución personal.</p>
+      <img src="proceso.jpg" alt="Tu Avance">
+    </div>
+
+    <div class="card">
+      <h3><a href="Prevención.html">Promoción y Prevención</a></h3>
+      <p>Cuidados preventivos para una vida saludable.</p>
+      <img src="promocion-y-prevención.jpg" alt="Promoción y Prevención">
+    </div>
+  </div>
+</body>
+</html>

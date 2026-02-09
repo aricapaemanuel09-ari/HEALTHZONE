@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+     font-style: normal;
+}
+
+body {
+    background-color: rgb(124, 243, 124);
+}
+
+header {
+    margin-top: 0px;
+    background-color: rgb(255, 255, 255, 0.5);
+    height: 100px;
+}
+
+header div {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+img { 
+    height: 60px;
+}
+nav { 
+    display: flex;
+    gap: 30px;
+    margin-left: 390px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: darkgreen;
+}
+ header nav a :hover{
+    color: blue;
+ }
+
+.fondo {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto 20px; 
+}
+
+ h1 {
+    color: darkgreen;
+    font-size: 55px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+ }
+
+ p {
+    color: rgb(0, 167, 0);
+    font-size: 18px;
+ }
+
+ .icono-servicio {
+    width: 120px;   /* tamaño más grande */
+    margin: 10px auto; /* centrada con espacio */
+    display: block; /* asegura que quede centrada */
+  }
+  
